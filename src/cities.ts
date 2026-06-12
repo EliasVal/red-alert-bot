@@ -1,12 +1,18 @@
 import axios from 'axios';
 
-type CitiesResponse = {
+export type CitiesResponse = {
   cities: {
     [index: string]: City;
   };
+  areas: {
+    [index: string]: {
+      en: string;
+      he: string;
+    };
+  };
 };
 
-type City = {
+export type City = {
   id: number;
   he: string;
   en: string;
@@ -19,6 +25,6 @@ type City = {
   lng: number;
 };
 
-export async function getCities(): Promise<Record<string, City>> {
-  return (await axios.get<CitiesResponse>('https://www.tzevaadom.co.il/static/cities.json')).data.cities;
+export async function getCities(): Promise<CitiesResponse> {
+  return (await axios.get<CitiesResponse>('https://www.tzevaadom.co.il/static/cities.json')).data;
 }

@@ -6,6 +6,10 @@
     "target": "esnext",
     "strictNullChecks": true,
     "noUnusedLocals": true,
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     
     "types": ["node"]
   },
