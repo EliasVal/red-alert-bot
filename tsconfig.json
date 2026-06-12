@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "erasableSyntaxOnly": true,
+    "noImplicitAny": true,
+    "target": "esnext",
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    
+    "types": ["node"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules/**"]
+}
