@@ -21,10 +21,11 @@
     "axios": "^1.17.0",
     "discord.js": "^14.26.4",
     "dotenv": "^17.4.2",
-    "socket.io-client": "^4.8.3"
+    "ws": "^8.21.0"
   },
   "devDependencies": {
     "@types/node": "^25.9.3",
+    "@types/ws": "^8.18.1",
     "typescript": "^6.0.3"
   }
 }
